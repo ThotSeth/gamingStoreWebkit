@@ -41,7 +41,7 @@
       /* running: a spinner under the brand. jb.js sets body.done / body.fail / body.log. */
       #spin {
         position: fixed;
-        top: calc(50% + 20px);
+        top: calc(50% + 240px);
         left: 50%;
         width: 46px;
         height: 46px;
@@ -58,7 +58,7 @@
       }
       #msg {
         position: fixed;
-        top: 50%;
+        top: calc(50% + 240px);
         left: 0;
         right: 0;
         transform: translateY(-50%);
@@ -136,6 +136,44 @@
       code {
         color: #9fb3d0;
       }
+
+      /* --- splash GAMING STORE --- */
+      #splash {
+        position: fixed;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -58%);
+        text-align: center;
+        width: 92%;
+        z-index: 1;
+      }
+      #splash img {
+        width: 300px;
+        height: 300px;
+      }
+      #splash .t1 {
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        color: #e6ebf2;
+        margin: 6px 0 0;
+      }
+      #splash .t2 {
+        font-size: 16px;
+        letter-spacing: 0.12em;
+        color: #8b95a3;
+        margin: 4px 0 0;
+      }
+      #splash .t3 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        color: #7fd0a0;
+        margin: 6px 0 0;
+      }
+      body.log #splash {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -146,6 +184,12 @@
         width="28"
         height="28"
       /><b>GAMING STORE</b><span style="font-size:12px;color:#8b95a3;margin-left:10px;vertical-align:middle;">📞 0412-9547577</span>
+    </div>
+    <div id="splash">
+      <img src="splash_logo.png" alt="GAMING STORE" />
+      <div class="t1">GAMING STORE</div>
+      <div class="t2">EL VIG&Iacute;A &bull; ESTADO M&Eacute;RIDA</div>
+      <div class="t3">&#128222; 0412-9547577</div>
     </div>
     <div id="spin"></div>
     <div id="msg">Restart your console</div>
